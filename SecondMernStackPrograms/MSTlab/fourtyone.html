@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple & Special Types in JavaScript</title>
+</head>
+<body>
+  <h2 style="text-align:center;color:darkblue;">Check the Console for Output</h2>
+
+  <script>
+
+// Simple Types
+
+    let name = "HariPotnuru";
+    let age = 25;
+    let isStudent = true;
+    let city;
+    let empty = null;
+    let id = Symbol("id");
+    let bigNum = 1234567890123456789012345n;
+
+console.group('%c🟢 SIMPLE TYPES', 'color:green;font-weight:bold;');
+
+    console.log("%cname (String):", "color:purple;", name);
+    console.log("%cage (Number):", "color:purple;", age);
+    console.log("%cisStudent (Boolean):", "color:purple;", isStudent);
+    console.log("%ccity (Undefined):", "color:purple;", city);
+    console.log("%cempty (Null):", "color:purple;", empty);
+    console.log("%cid (Symbol):", "color:purple;", id.toString());
+    console.log("%cbigNum (BigInt):", "color:purple;", bigNum);
+    console.groupEnd();
+
+   
+
+
+ // Special Types
+
+
+
+    let person = { name: "Hari Shankar", age: 25 };
+    let colors = ["red", "green", "blue"];
+    let greet = function () { return "Hello!"; };
+    let today = new Date();
+    let pattern = /[a-z]+/;
+
+console.group('%c🔵 SPECIAL TYPES', 'color:blue;font-weight:bold;');
+
+    console.log("%cperson (Object):", "color:teal;", person);
+    console.log("%ccolors (Array):", "color:teal;", colors);
+    console.log("%cgreet() (Function):", "color:teal;", greet());
+    console.log("%ctoday (Date):", "color:teal;", today);
+    console.log("%cpattern (RegExp):", "color:teal;", pattern);
+    console.groupEnd();
+  </script>
+</body>
+</html>
+
+

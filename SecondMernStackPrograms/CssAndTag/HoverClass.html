@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1:hover
+    {
+      background-color: aqua;
+    }
+    .buttons:link
+    {
+      font-size: 50px;
+    }
+    a{
+      text-decoration: none;
+      border-style: solid;
+      border: none;
+      border-radius: 10px;
+      padding: 3px;
+      background-color:rgb(194, 94, 189);
+      color: rgb(201, 213, 21);
+    }
+    a:hover
+    {
+      color:aqua; 
+      
+    }
+    p:target
+    {
+      background-color: chocolate;
+    }
+    input:focus
+    {
+      background-color: wheat;
+      color: blueviolet;
+    }
+    .input1:read-only
+    {
+      background-color:yellow;
+    }
+    .pass:valid:focus{
+      background-color: white;
+      background-color: violet;
+    }
+    .pass:invalid
+    {
+      background-color: red;
+    }
+    .age:in-range:focus
+    {
+      background-color: white;
+      background-color: cornflowerblue;
+    }
+    .age:out-of-range
+    {
+      background-color: black;
+      color: white;
+    }
+    input:default+label
+    {
+      color: green;
+    }
+    input:checked+label
+    {
+      color: green;
+    }
+   textarea:empty
+   {
+    background-color: aqua;
+    color: brown;
+   }
+   textarea
+   {
+    width: 300px;
+    height: 100px;
+   }
+  </style>
+</head>
+<body>
+  <center><h1>Welcome to CSS</h1></center>
+  <hr>
+  <a href="www.google.com" class="buttons">Click</a>
+  <hr>
+  <a href="#last" >Last</a>
+  <p id="first"> Adobe® Portable Document Format (PDF) is a universal file format that preserves all
+    of the fonts, formatting, colours and graphics of any source document, regardless of
+    the application and platform used to create it.
+    Adobe PDF is an ideal format for electronic document distribution as it overcomes the
+    problems commonly encountered with electronic file sharing.
+    • Anyone, anywhere can open a PDF file. All you need is the free Adobe Acrobat
+    Reader. Recipients of other file formats sometimes can't open files because they
+    don't have the applications used to create the documents.
+    </p>
+    <p>• PDF files always print correctly on any printing device.
+      • PDF files always display exactly as created, regardless of fonts, software, and
+      operating systems. Fonts, and graphics are not lost due to platform, software, and
+      version incompatibilities.
+      • The free Acrobat Reader is easy to download and can be freely distributed by
+      anyone.
+      • Compact PDF files are smaller than their</p>
+      <p id="last">• PDF files always print correctly on any printing device.
+        • PDF files always display exactly as created, regardless of fonts, software, and
+        operating systems. Fonts, and graphics are not lost due to platform, software, and
+        version incompatibilities.
+        • The free Acrobat Reader is easy to download and can be freely distributed by
+        anyone.
+        • Compact PDF files are smaller than their</p>
+    <a href="#first">First</a>
+    <br><hr>
+    <center><h1>Psudo Selectors</h1></center>
+    Enter name: <br><input type="text" placeholder="Enter Your Name">
+    <br>
+    <br>
+    Enter your Password: <br><input type="password" class="input1" readonly placeholder="readOnly selector">
+    <br><br>
+    Enter Your Password: <br>
+    <input type="password" class="pass" placeholder="Password" minlength="5">
+    <br><br>Age: <br>
+    <input type="number" class="age" min="0" max="100">
+    <br><br>
+    Language: <br>
+    <input type="checkbox"><label>English</label>
+    <input type="checkbox" checked><label>Telugu</label>
+    <input type="checkbox"><label>Hindi</label>
+    <br><br>
+    Address 👇<br>
+    <textarea name="" id="" placeholder="Address"></textarea>
+</body>
+</html>

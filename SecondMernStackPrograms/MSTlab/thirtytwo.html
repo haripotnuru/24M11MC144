@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Looping Through Object Data</h3>
+  <pre id="output"></pre>
+
+  <script>
+    const person = { name: "Hari Shankar", age: 25, city: "Srikakulam" };
+    let result = "For-in:\n";
+    // for-in loop (used with objects)
+    for (let key in person) {
+      result += `${key}: ${person[key]}\n`;
+}
+
+    // Convert object to entries for forEach
+    result += "\nforEach:\n";
+    Object.entries(person).forEach(([key, value]) => {
+      result += `${key}: ${value}\n`;
+});
+
+    // for-of loop with Object.entries
+    result += "\nFor-of:\n";
+    for (let [key, value] of Object.entries(person)) {
+      result += `${key}: ${value}\n`;
+}
+
+    document.getElementById("output").innerText = result;
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Wikipedia in Div</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .wiki-container {
+            width: 80%;
+            height: 500px;
+            border: 2px solid #333;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        img {
+            width: 150px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Click on the Image to Load Narendra Modi's Wikipedia Page</h2>
+        
+        <!-- Anchor tag links to Wikipedia inside the iframe -->
+        <a href="https://en.wikipedia.org/wiki/Narendra_Modi" target="wikiFrame">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Narendra_Modi_2023.jpg" alt="Narendra Modi">
+        </a>
+        
+        <!-- The iframe will display the Wikipedia page -->
+        <div class="wiki-container">
+            <iframe name="wikiFrame"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

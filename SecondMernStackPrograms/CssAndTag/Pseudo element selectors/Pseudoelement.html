@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .head:hover
+    {
+      background-color: aqua;
+    }
+    h1::first-letter
+    {
+      color: red;
+      font-size: 50px;
+      text-transform: uppercase;
+
+    }
+    pre::first-line
+    {
+      text-transform: uppercase;
+      font-size: 30px;
+      color: blueviolet;
+    }
+    #demo::first-line
+    {
+      color: blue;
+    }
+    h2::before
+    {
+      color:slateblue;
+      content: "good morning ";
+    }
+    h2::after
+    {
+      color: skyblue;
+      content: " today we are discussing CSS";
+    }
+    p::selection
+    {
+      background-color: darkgoldenrod;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <center><h1 class="head">Welcome to Pseudo element selectors</h1></center>
+  <br>
+  <hr>
+  <h1>this is first-letter pseudo element selector</h1>
+  <br><hr>
+  <pre>
+    this is pre tag
+    with pseudo element of 
+    first-line
+  </pre>
+  <hr>
+  <h3>This is id seletor with pseudo element of first-line </h3>
+  <p id="demo" >Adobe® Portable Document Format (PDF) is a universal file format that preserves all
+    of the fonts, formatting, colours and graphics of any source document, regardless of
+    the application and platform used to create it.
+    Adobe PDF is an ideal format for electronic document distribution as it overcomes the
+    problems commonly encountered with electronic file sharing.
+    • Anyone, anywhere can open a PDF file. All you need is the free Adobe Acrobat
+    Reader. Recipients of other file formats sometimes can't open files because they
+    don't have the applications used to create the documents.</p>
+    <hr>
+    <h3>to apply anything before the tag we use before and also after pseudo elements</h3>
+    <h2>MCA-A students</h2>
+    <h2>MCA-B students</h2>
+    <h2>MCA-C students</h2>
+    <h2>MCA-D students</h2>
+    <h2>MCA-F students</h2>
+    <hr>
+    <h3>the selection selector  for after selecting the content it changes its behaviour</h3>
+    <p>Adobe® Portable Document Format (PDF) is a universal file format that preserves all
+      of the fonts, formatting, colours and graphics of any source document, regardless of
+      the application and platform used to create it.
+      Adobe PDF is an ideal format for electronic document distribution as it overcomes the
+      problems commonly encountered with electronic file sharing.
+      • Anyone, anywhere can open a PDF file. All you need is the free Adobe Acrobat
+      Reader. Recipients of other file formats sometimes can't open files because they
+      don't have the applications used to create the documents.</p>
+</body>
+</html>

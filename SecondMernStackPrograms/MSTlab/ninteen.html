@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Methods</title>
+  <style>
+    body { font-family: sans-serif; background: #f2f2f2; padding: 20px; }
+    input, textarea, select, button { margin: 5px 0; width: 100%; padding: 8px; }
+    div { background: #fff; padding: 15px; margin-bottom: 10px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+  <h2>Input Methods in JavaScript</h2>
+
+  <div>
+    <button onclick="let name=prompt('Your name?'); alert('Hi, ' + name);">Prompt Input</button>
+  </div>
+
+  <div>
+    <input type="text" id="txt" placeholder="Enter name">
+    <button onclick="alert('Hello ' + txt.value)">Show</button>
+  </div>
+
+ 
+
+
+
+ <div>
+    <textarea id="ta" placeholder="Your feedback..."></textarea>
+    <button onclick="alert('Feedback: ' + ta.value)">Submit</button>
+  </div>
+
+  <div>
+    <label><input type="checkbox" id="c1"> HTML</label>
+    <label><input type="checkbox" id="c2"> CSS</label>
+    <button onclick="alert('Skills: ' + (c1.checked?'HTML ':'') + (c2.checked?'CSS':''))">Show Skills</button>
+  </div>
+
+  <div>
+    <label><input type="radio" name="g" value="Male"> Male</label>
+    <label><input type="radio" name="g" value="Female"> Female</label>
+    <button onclick="alert('Gender: ' + document.querySelector('input[name=g]:checked')?.value)">Show Gender</button>
+  </div>
+
+  <div>
+    <select id="country">
+      <option>India</option><option>USA</option><option>UK</option>
+    </select>
+    <button onclick="alert('Country: ' + country.value)">Select</button>
+  </div>
+
+</body>
+</html>

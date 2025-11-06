@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptAndOpenWindows</title>
+  <style>
+    input
+    {
+      border: none;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <table id="votertable" border="">
+    <tr>
+      <!-- <td>Sno</td> -->
+      <td>Name</td>
+      <td>Age</td>
+      <td>Eligibilty</td></tr>
+      <tr>
+        <!-- <td id="pnum"></td> -->
+        <td id="pname"></td>
+        <td id="page"></td>
+        <td id="pstatus"></td>
+      </tr>
+</table>
+  <script>
+    
+    function nameAge()
+    {
+      let nameArray=[]
+      let ageArray=[]
+      let statusArray=[]
+      const name=prompt("Enter your Name")
+      nameArray.push(name)
+      const age=parseInt(prompt("Enter Your Age"))
+      ageArray.push(age)
+      const status=age>=18?"yes":"no"
+      statusArray.push(status)
+      //document.getElementById("pnum").innerHTML="1"
+      for(let i=0;i<status.length;i++)
+      {
+        const name1=nameArray.pop();
+        const age1=ageArray.pop()
+        const status1=statusArray.pop();
+        document.getElementById("pname").innerHTML=name1
+        document.getElementById("page").innerHTML=age1
+        document.getElementById("pstatus").innerHTML=status1
+        document.getElementById("votertable").style.display="table";
+      }
+    }
+    function fun1()
+    {
+      var x=prompt("Enter your Name")
+      document.writeln("My name is "+x)
+      open("www.gooogl")
+    }
+    function fun2()
+    {
+      open("http://www.aec.edu.in")
+    }
+    function fun3()
+    {
+      setTimeout(
+        function()
+        {
+          alert("Welcome to javasript")
+        },1000
+      )
+    }
+  </script>
+  <!-- <input type="button" value="click" onclick="fun1()">
+  <input type="button" value="AdityaUniversity" onclick="fun2()">
+  <input type="button" value="SetTimeOut" onclick="fun3()"> -->
+  <input type="button" value="Eligibilty Check" onclick="nameAge()">
+  
+</body>
+
+</html>

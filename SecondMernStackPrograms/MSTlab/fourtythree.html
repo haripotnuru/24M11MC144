@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrow Function Demo</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 5px; display: inline-block; text-align: left; }
+  </style>
+</head>
+<body>
+  <h2>Arrow Functions with Parameters</h2>
+  <pre id="output"></pre>
+  <script>
+    // Arrow function with default & optional parameter
+    const greet = (name = "Guest", title) => `Hello ${title ? title + " " : ""}${name}!`;
+    // Arrow function with REST parameter
+    const sum = (...nums) => nums.reduce((a, b) => a + b, 0);
+    // Display results
+    const output = `
+→ greet("Hari Shankar", "Mr.") → ${greet("Hari Shankar", "Mr.")}
+→ greet("Hari") → ${greet("Hari")}
+→ greet() → ${greet()}
+→ sum(10, 20, 30) → ${sum(10, 20, 30)}
+→ sum(5, 5, 5, 5, 5) → ${sum(5, 5, 5, 5, 5)}
+→ sum() → ${sum()}
+    `;
+    document.getElementById("output").innerText = output;
+  </script>
+</body>
+</html>

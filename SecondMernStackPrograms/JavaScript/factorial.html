@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function factorial(number)
+    {
+      var result=1;
+      if(number<0)
+      {
+        document.writeln("Enter the number greater then 0")
+      }
+      else
+      {
+        document.writeln("Factorial of "+number+":<br>")
+        for(var i=1;i<=number;i++)
+        {
+          result*=i;
+        }
+        return result;
+      }
+    }
+    document.writeln(factorial(5))
+    function Febonacci(number)
+    {
+      document.writeln("<br>Febinacci numbers of "+number+":<br>")
+      let first=0,second=1,next=0;
+      for(var i=0;i<number;i++)
+      {
+        document.writeln(first);
+        next=first+second;
+        first=second;
+        second=next;
+      }
+    }
+    Febonacci(20)
+  </script>
+</body>
+</html>

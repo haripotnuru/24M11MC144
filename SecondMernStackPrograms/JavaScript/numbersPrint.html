@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>numbersPrint</title>
+</head>
+<body>
+  <script>
+    let number=parseInt(prompt("Enter the number to print upto it"))
+    if(number>0)
+    {
+      document.writeln("This is with for loop<br>")
+      for(var i=1;i<=number;i++)
+      {
+        document.writeln(i+"<br>");
+      }
+      document.writeln("<br>This is with while loop")
+      var i=1;
+      while(i<=number)
+      {
+        document.writeln("<br>"+i);
+        i++;
+      }
+    }
+    else
+    {
+      alert("Enter the number greater then 0")
+    }
+  </script>
+</body>
+</html>

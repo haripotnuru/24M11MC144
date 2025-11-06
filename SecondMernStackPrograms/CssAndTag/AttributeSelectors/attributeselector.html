@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    [href]
+    {
+      color:green;
+      font-size: 50px;
+      font-family: impact;
+    }
+    a:hover
+    {
+      color: rgb(216, 78, 119);
+    }
+    [target="_self"]
+    {
+      color: blueviolet;
+
+    }
+    [class |="try"]
+    {
+      color: burlywood;
+    }
+    [class ^="top"]
+    {
+      color: blue;
+    }
+    [class$="try"]
+    {
+      color: chocolate;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is href attribute selector</h1>
+  <a href="1.html">Click</a><br><br>
+  <a href="2.html">Click me</a><br><br>
+  <a href="3.html">Click Here</a>
+  <br><hr>
+  <h1>This is target attribute with value of "_self"[target="_self"]</h1>
+  <a href="1.html" target="_self">Click</a><br><br>
+  <a href="2.html"target="_self">Click me</a><br><br>
+  <a href="3.html"target="_self">Click Here</a>
+  <hr>
+   <h1>Starts with and ends with attributes using pipe symbol (|=)</h1>
+  <h3 class="try-Demo">This is h3 tag with tryDemo class attribute</h3>
+  <p class="top-try"> this is paragraph tag with top-try class attribute</p>
+  <pre class="trycontent">this is pre tag with trycontent</pre>
+  <h4>We use the symbol is class^="top" only top string class works </h4>
+  <h3 class="topdemo">This is h3 tag with topdemo class attribute</h3>
+
+  <h2>For ends with attribute</h2>
+
+</body>
+</html>

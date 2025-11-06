@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+    .form-container {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input {
+      display: block;
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 250px;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h3>Registration Form</h3>
+    <input type="text" id="name" placeholder="Enter Name" />
+    <input type="text" id="mobile" placeholder="Enter Mobile" />
+    <input type="text" id="email" placeholder="Enter Email" />
+    <button onclick="validate()">Submit</button>
+    <div id="msg" class="error"></div>
+  </div>
+  <script>
+    function validate() {
+      const name = document.getElementById("name").value.trim();
+      const mobile = document.getElementById("mobile").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const msg = document.getElementById("msg");
+      const nameRegex = /^[A-Za-z][A-Za-z0-9]{5,}$/;
+      const mobileRegex = /^\d{10}$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!nameRegex.test(name)) {
+        msg.innerText = "Invalid Name: Start with letter, at least 6 characters.";
+      } else if (!mobileRegex.test(mobile)) {
+        msg.innerText = "Invalid Mobile: Must be exactly 10 digits.";
+      } else if (!emailRegex.test(email)) {
+        msg.innerText = "Invalid Email: Use format name@example.com";
+      } else {
+        msg.style.color = "green";
+        msg.innerText = "All fields are valid!";
+      }
+    }
+  </script>
+</body></html>

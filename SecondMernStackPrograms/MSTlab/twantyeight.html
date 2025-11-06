@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User-Defined Object Example</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+  <h2>
+User-Defined Object using Constructor, Methods & Accessors
+</h2>
+  <button onclick="showPerson()">Show Person Info</button>
+  <div id="info" style="margin-top: 20px;"></div>
+
+  <script>
+    // Constructor Function
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+
+      // Method
+      this.greet = function() {
+        return `Hello, I'm ${this.name} and I'm ${this.age} years old.`;
+      };
+
+      // Accessor - getter
+      this.getAgeInMonths = function() {
+        return this.age * 12;
+      };
+
+
+
+
+
+
+      // Accessor - setter
+      this.setName = function(newName) {
+        this.name = newName;
+      };
+    }
+
+    // Create object using constructor
+    const person1 = new Person("John", 25);
+
+    function showPerson() {
+      // Modify name using setter
+      person1.setName("Hari Shankar");
+
+      // Display data
+      document.getElementById("info").innerHTML = `
+        <strong>Name:</strong> ${person1.name} <br>
+        <strong>Age:</strong> ${person1.age} <br>
+        <strong>Greeting:</strong> ${person1.greet()} <br>
+        <strong>Age in Months:</strong> ${person1.getAgeInMonths()}
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <pre>
+<script>
+    var a;
+    var b=123;
+    //scope is global
+    //redeclaration is possible to declare
+    //default value is undefine
+    //we didn't get any error
+    document.writeln("outside of the function :"+a);
+    function fun()
+    {
+      document.writeln("Inside of the function:"+b);
+      if(true)
+      {
+        document.writeln("Inside block:"+b);
+      }
+      document.writeln("ouside block:"+b);
+      
+    }
+    fun();
+    document.writeln(c);
+    var c=10;
+    //let is the latest variable declaration of js
+    //Redclarations is NOT posisble 
+    //we get the error if we dont declare 
+    const name1='rama'
+    const name2="krishna"
+    const name3=`hari`
+    document.writeln(name1);
+    document.writeln(name2);
+    document.writeln(name3);
+    const ra=`after combined: ${name1+' '+3+4 +' '}${name2+' '+7+7}`;
+    document.writeln(ra);
+    let num1=30;
+    let num2=40;
+    document.writeln(num1+num2);
+    const x=-10/0;// As output infinity
+    document.writeln(x);
+    document.writeln(-x);
+    document.writeln('abc'/10);
+    const num3=10;
+    const num4="10";
+    document.writeln(num3==num4);//it check only data without checking type
+    document.writeln(num3===num4);//it checks data and data type also data type
+</script>
+</pre>
+</head>
+<body>
+  
+</body>
+</html>

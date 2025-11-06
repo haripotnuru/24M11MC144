@@ -1,0 +1,85 @@
+body{
+  margin: 0px;
+}
+header
+{
+  background-image: url("workspace.jpg");
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  color: rgb(12, 12, 12);
+  background-size:1px;
+  
+}
+nav
+{
+  
+  background-color:rgb(204, 234, 234);
+  padding:20px;
+  font-weight: bold;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  font-size: medium;
+  font-size: 20px;
+  padding-right: 10px;
+}
+aside
+{
+  border-radius:10px;
+  padding: 10px;
+  width: 130px;
+  background-color: rgb(224, 145, 145);
+}
+main{
+  border-radius: 10px;
+  display:flex;
+  width:fit-content;
+  justify-content: space-between;
+  
+  gap: 20px;
+}
+img
+{
+  width: 70%;
+}
+section
+{
+  height: fit-content;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: antiquewhite;
+}
+ul
+{
+  
+  align-items: center;
+  width: 60px;
+  border: 5px;
+  border-style: double;
+  text-decoration: double;
+}
+footer
+{
+  height: 50px;
+  text-align: center;
+  background-color: rgb(146, 147, 144);
+}
+/* .section1 */
+/* {
+  height:50px;
+  width: 70%;
+} */
+/* .wiki-container {
+  border: 2px solid #333;
+  margin-top: 20px;
+} */
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

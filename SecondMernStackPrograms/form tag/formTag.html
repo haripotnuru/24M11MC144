@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img
+    {
+      width: 40px;
+      height: 40px;
+    }
+    .fieldSet
+    {
+      border-width: 4px;
+      border-radius: 6px;
+      border-style: solid;
+      border-color: blue;
+      background-color: rgb(211, 149, 199);
+      width: 100%px;
+    }
+    .form
+    {
+      border: 1px;
+      border-radius: 3px;
+      border-color: rgb(194, 85, 174);
+      width:100%;
+      align-content: center;
+    }
+    .main-div
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input
+    {
+      border: none;
+      border-radius: 20px;
+      box-shadow:0px 2px 5px rgb(219, 178, 102);
+    }
+    .input-size
+    {
+      width:60%;
+      height: 30px;
+    }
+    textarea
+    {
+      width: 60%;
+      height: 60px;
+      border: none;
+      border-radius: 10px;
+      box-shadow:0px 2px 5px rgb(219, 178, 102);
+    }
+    button
+    {
+      width: 100px;
+      height: 30px;
+      margin-left: 5px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 5px 20px rgb(156, 98, 98);
+      text-transform: uppercase;
+      color: blue;
+
+    }
+    select
+    {
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover
+    {
+      width: 110px;
+      height: 35px;
+      font-size: medium;
+      color: white;
+      background-color: rgb(50, 201, 50);
+      transition:0.3s;
+    }
+  </style>
+</head>
+<body style="background-color:lightsteelblue;">
+  <center><h1><img src="AUS logo.png" alt="image">Welcome to My World!</h1></center>
+  <div class="main-div">
+  <form  >
+    <div class="form">
+    <fieldset class="fieldSet">
+       <label for="user"></label>
+        User name: <br><input class="input-size" type="text" id="user" name="user" placeholder="Enter your name" required><br>
+        <br>
+        <label for="pass"></label>
+        Password : <br><input class="input-size" type="password" id="pass" name="pass" placeholder="Enter your password" required><br>
+        <br>
+        <label for="Email">Email</label>: <br>
+        <input type="email" id="Email" class="input-size" placeholder="Enter your email" required><br><br>
+        <label for="phone">Phone:</label><br><input class="input-size" type="number" id="phone" style="width: 200px;" placeholder="Phone Number"><br>
+        <label for="textarea">Address</label><br>
+        <textarea name="address" id="textarea" rows="" cols="20" placeholder="Address"></textarea></label><br><br>
+        <label for="gender">Gender:</label>
+         <br><input type="radio" id="gender" name="Gender" value="M">Male
+        <input type="radio" id="gender" name="Gender" value="F">Female
+        <br><br>
+        <label for="cource">Cources:</label>
+         <br><input type="checkbox" id="cource" value="C"> C 
+                 <input type="checkbox" id="cource"  value="C++"> C++
+        <input type="checkbox" id="cource"  value="Java" > Java
+        <input type="checkbox" id="cource"  value="Py"> Python
+        <br><br>
+        Languages: <br>
+        <input type="checkbox" id="Language" value="telugu">Telugu
+        <input type="checkbox" id="Language" value="English">English
+        <br>
+        Degree: <br>
+        <select name="degree" id="" style="width: 200;height:30"  required>
+          <option value="Select">Select</option>
+          <option value="BSc">BSc</option>
+          <option value="Btech">BTech</option>
+          <option value="MCA">MCA</option>
+        </select>
+        <br><br>
+        <!-- Upload Resume:<input type="file"><br> -->
+        
+        <legend>Registration Form</legend>
+        <div>
+            <button type="button" style="margin-right: 350px;">Cancel</button>
+            <button type="button">Submit</button>
+            <!-- <input type="reset" value="Cancel" style="margin-right: 450;" >
+            <input type="submit" name="click" value="Submit"> -->
+      </div>
+  </fieldset>
+</div>
+  </form>
+</div>
+</body>
+</html>
