@@ -1,0 +1,23 @@
+print("Operations On List dataType")
+List=[45,23,1,78]
+print("List of elements :",List)
+List.append(56)
+print("List of elements with adding a value :",List)
+List.remove(List[0])
+print("List of elements After removing one element :",List)
+List.sort()
+print("List of elements After sorting the list :",List)
+print()
+print("Tuple Operations ")
+Tuple=("red","Green","Yellow","White","Blue","Pink")
+print(type(Tuple))
+print(Tuple[0])
+slicedTuple=Tuple[2:4]
+print(slicedTuple)
+red,Green,Yellow,White,Blue,Pink=Tuple
+print(red)
+print(Green)
+print(Yellow)
+print(White)
+print(Blue)
+print(Pink)

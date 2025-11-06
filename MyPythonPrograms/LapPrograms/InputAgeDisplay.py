@@ -1,0 +1,5 @@
+age=input("Enter your age :")
+print(f"Your age as String:{age}")
+print(f"Your age in int data type :{int(age)}")
+print(f"Your age in int data type :{float(age)}")
+print(f"Your age in int data type :{complex(age)}")
